@@ -5,13 +5,13 @@
 <h3 align="center">Cacao Kit (Backend)</h3>
 
 <p align="center">
-  Headless Kirby setup for the Cacao frontend<br>
+  Headless Kirby setup for the Cacao Kit frontend<br>
   <a href="https://github.com/johannschopplich/cacao-kit-frontend"><strong>Cacao kit frontend »</strong></a>
 </p>
 
 <br>
 
-# Cacao Kit Backend
+# Cacao Kit (Backend)
 
 This starter kit is based on the [`kirby-headless-starter`](https://github.com/johannschopplich/kirby-headless-starter) and provides a ready-to-use headless Kirby setup for the [Cacao Kit Frontend](https://github.com/johannschopplich/cacao-kit-frontend).
 
