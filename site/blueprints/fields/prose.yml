@@ -1,0 +1,27 @@
+label: Prose
+type: blocks
+fieldsets:
+  text:
+    label: Text
+    type: group
+    fieldsets:
+      - heading
+      - text
+      - list
+      - quote
+      - line
+  media:
+    label:
+      de: Medien
+      en: Media
+    type: group
+    fieldsets:
+      - image
+      # - gallery
+      - video
+  code:
+    label: Code
+    type: group
+    fieldsets:
+      - code
+      - markdown

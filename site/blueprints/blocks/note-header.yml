@@ -1,0 +1,20 @@
+name:
+  en: Note Header
+  de: Notizen-Kopf
+icon: pen
+preview: fields
+wysiwyg: true
+fields:
+  date:
+    label:
+      en: Date
+      de: Datum
+    type: date
+    time: true
+    default: now
+  author:
+    label:
+      en: Author
+      de: Autor
+    type: users
+  tags: true

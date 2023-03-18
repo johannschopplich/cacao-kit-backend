@@ -1,0 +1,6 @@
+name: Prose
+icon: text
+preview: fields
+wysiwyg: true
+fields:
+  prose: fields/prose

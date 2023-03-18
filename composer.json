@@ -1,0 +1,24 @@
+{
+  "require": {
+    "getkirby/cms": "^3.9",
+    "getkirby/kql": "^2.0",
+    "johannschopplich/kirby-helpers": "^4.0",
+    "johannschopplich/kirby-headless": "^1.4",
+    "jg/kirby-fields-block": "^1.2"
+  },
+  "scripts": {
+    "start": [
+      "Composer\\Config::disableProcessTimeout",
+      "@php -S localhost:8000 -t public vendor/getkirby/cms/router.php"
+    ]
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "allow-plugins": {
+      "getkirby/composer-installer": true
+    }
+  },
+  "extra": {
+    "kirby-cms-path": false
+  }
+}

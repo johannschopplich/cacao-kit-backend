@@ -1,0 +1,62 @@
+options:
+  preview: "{{ site.frontendUrl }}"
+
+tabs:
+  dashboard:
+    label: Dashboard
+    icon: draft
+    columns:
+      - width: 1/2
+        sections:
+          notes:
+            type: pages
+            label:
+              en: Notes
+              de: Notizen
+            layout: cards
+            parent: kirby.page("notes")
+            create: note
+            image:
+              query: page.cover.toFile
+              cover: true
+              back: white
+
+      - width: 1/2
+        sections:
+          pages:
+            type: pages
+            create: default
+            label:
+              en: Pages
+              de: Seiten
+            image:
+              query: page.cover.toFile
+              cover: true
+              back: white
+
+  settings:
+    label:
+      en: Settings
+      de: Einstellungen
+    icon: settings
+    columns:
+      - width: 1/2
+        sections:
+          content:
+            type: fields
+            fields:
+              footer:
+                label:
+                  en: Footer
+                  de: Fußzeile
+                type: pages
+
+      - width: 1/2
+        sections:
+          meta:
+            type: fields
+            fields:
+              cover:
+                extends: fields/cover
+                query: site.images.template('image')
+              description: fields/description

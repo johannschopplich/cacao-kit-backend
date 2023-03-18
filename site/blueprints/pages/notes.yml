@@ -1,0 +1,33 @@
+title:
+  en: Notes
+  de: Notizen
+
+icon: ⛰️
+
+options:
+  preview: "{{ page.frontendUrl }}"
+
+columns:
+  - width: 1/1
+    sections:
+      notes:
+        type: pages
+        label:
+          en: Notes
+          de: Notizen
+        layout: cards
+        create: note
+        image:
+          query: page.cover.toFile
+          cover: true
+          back: white
+
+  - width: 2/3
+    sections:
+      blocks: sections/blocks
+
+  - width: 1/3
+    sections:
+      cover: sections/cover
+      description: sections/description
+      images: sections/images

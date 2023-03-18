@@ -1,0 +1,23 @@
+label:
+  en: Blocks
+  de: Blöcke
+type: blocks
+fieldsets:
+  text:
+    label:
+      en: Sections
+      de: Abschnitte
+    type: group
+    fieldsets:
+      - intro
+      - prose
+  grids:
+    label: Grids
+    type: group
+    fieldsets:
+      - grid-notes
+  meta:
+    label: Meta
+    type: group
+    fieldsets:
+      - note-header

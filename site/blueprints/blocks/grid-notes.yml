@@ -1,0 +1,13 @@
+name:
+  en: Notes Grid
+  de: Notizen-Grid
+icon: grid
+preview: fields
+wysiwyg: true
+fields:
+  info:
+    label: Info
+    type: info
+    text:
+      en: This block is used to display a grid of notes.
+      de: Dieser Block wird verwendet, um ein Grid von Notizen anzuzeigen.

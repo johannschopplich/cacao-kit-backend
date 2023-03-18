@@ -1,0 +1,19 @@
+title:
+  en: Note
+  de: Notiz
+
+icon: ⛰️
+
+options:
+  preview: "{{ page.frontendUrl }}"
+
+columns:
+  - width: 2/3
+    sections:
+      blocks: sections/blocks
+
+  - width: 1/3
+    sections:
+      cover: sections/cover
+      description: sections/description
+      images: sections/images

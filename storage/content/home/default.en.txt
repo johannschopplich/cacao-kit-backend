@@ -1,0 +1,17 @@
+Title: Home
+
+----
+
+Blocks: [{"content":{"text":"Welcome to the Cacao Kit!"},"id":"6587444b-2692-449e-8cc8-bb2361244ca4","isHidden":false,"type":"intro"},{"content":[],"id":"e6fc0b0b-cec2-4929-92fc-477421f67cf3","isHidden":false,"type":"grid-notes"}]
+
+----
+
+Cover: 
+
+----
+
+Description: 
+
+----
+
+Uuid: O2Eq4VIJKK685l96

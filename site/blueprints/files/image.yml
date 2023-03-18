@@ -1,0 +1,33 @@
+title:
+  en: Image
+  de: Bild
+
+accept:
+  type: image
+
+columns:
+  - width: 1/2
+    sections:
+      content:
+        type: fields
+        fields:
+          caption:
+            label:
+              en: Caption
+              de: Bildunterschrift
+            type: textarea
+            size: medium
+
+  - width: 1/2
+    sections:
+      meta:
+        type: fields
+        fields:
+          alt:
+            label:
+              en: Alternative Text
+              de: Alternativtext
+            type: text
+          link:
+            label: Link
+            type: url

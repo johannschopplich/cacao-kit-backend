@@ -1,0 +1,8 @@
+label:
+  en: Description
+  de: Beschreibung
+type: textarea
+buttons: false
+help:
+  en: A short description of the page that is displayed under the title by search engines.
+  de: Eine kurze Beschreibung der Seite, die von Suchmaschinen unter dem Titel angezeigt wird.

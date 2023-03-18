@@ -1,0 +1,8 @@
+type: pages
+label:
+  en: Pages
+  de: Seiten
+image:
+  query: page.cover.toFile
+  cover: true
+  back: white

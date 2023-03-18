@@ -1,0 +1,8 @@
+name: Intro
+icon: headline
+preview: fields
+wysiwyg: true
+fields:
+  text:
+    label: Text
+    type: text
