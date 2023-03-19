@@ -6,8 +6,4 @@ Footer:
 
 ----
 
-Cover: 
-
-----
-
-Description: 🍫 Best practice Nuxt starter for Kirby with i18n & blocks
+Description: 🍫 Best practice Nuxt starter for headless Kirby CMS

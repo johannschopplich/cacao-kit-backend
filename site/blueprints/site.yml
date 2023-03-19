@@ -59,4 +59,5 @@ tabs:
               cover:
                 extends: fields/cover
                 query: site.images.template('image')
+                translate: false
               description: fields/description
