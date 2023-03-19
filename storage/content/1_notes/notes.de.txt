@@ -2,12 +2,16 @@ Title: Notes
 
 ----
 
+Slug: notizen
+
+----
+
 Blocks: [{"content":{"text":"Notizen"},"id":"dfad0f8b-f31d-46fc-844b-585d491fb0aa","isHidden":false,"type":"intro"},{"content":[],"id":"aec40e69-047a-4ea0-8cdd-9cd3ba4221c3","isHidden":false,"type":"grid-notes"}]
 
 ----
 
-Cover:
+Cover: 
 
 ----
 
-Description:
+Description: 
