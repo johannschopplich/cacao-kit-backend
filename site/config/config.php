@@ -42,6 +42,14 @@ return [
         // for for KQL endpoint
         'token' => env('KIRBY_HEADLESS_API_TOKEN'),
 
+        'blocks' => [
+            // Blocks that contain a nested blocks field, used to resolve
+            // image UUIDs to image objects inside nested blocks
+            'nested' => [
+                'prose'
+            ]
+        ],
+
         'panel' => [
             // Preview URL for the Panel preview button
             'frontendUrl' => env('KIRBY_HEADLESS_FRONTEND_URL'),
