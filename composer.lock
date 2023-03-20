@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "60df29d06d14505280765337d08b29ff",
+    "content-hash": "d10ad2107bca9f4ad0f5a81b0aa21889",
     "packages": [
         {
             "name": "claviska/simpleimage",
@@ -522,16 +522,16 @@
         },
         {
             "name": "johannschopplich/kirby-headless",
-            "version": "1.4.5",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johannschopplich/kirby-headless.git",
-                "reference": "a94e7a384d98d239c142539b2ca2e8438ccadfad"
+                "reference": "1d14459cb5344ce09f589c58159f3ffb5b0c3ea1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johannschopplich/kirby-headless/zipball/a94e7a384d98d239c142539b2ca2e8438ccadfad",
-                "reference": "a94e7a384d98d239c142539b2ca2e8438ccadfad",
+                "url": "https://api.github.com/repos/johannschopplich/kirby-headless/zipball/1d14459cb5344ce09f589c58159f3ffb5b0c3ea1",
+                "reference": "1d14459cb5344ce09f589c58159f3ffb5b0c3ea1",
                 "shasum": ""
             },
             "require": {
@@ -564,9 +564,9 @@
             ],
             "support": {
                 "issues": "https://github.com/johannschopplich/kirby-headless/issues",
-                "source": "https://github.com/johannschopplich/kirby-headless/tree/v1.4.5"
+                "source": "https://github.com/johannschopplich/kirby-headless/tree/v1.5.0"
             },
-            "time": "2023-03-20T16:00:58+00:00"
+            "time": "2023-03-20T18:56:33+00:00"
         },
         {
             "name": "johannschopplich/kirby-helpers",
