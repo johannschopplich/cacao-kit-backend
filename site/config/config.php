@@ -36,19 +36,24 @@ return [
         'auth' => 'bearer'
     ],
 
+    'blocksResolver' => [
+        // Resolve UUIDs inside blocks (for KQL queries)
+        'files' => [
+            // Block name as key, field name as value
+            // Resolve the built-in `image` field of the `image` block
+            'image' => 'image'
+        ],
+        // Resolve UUIDS inside nested blocks (for KQL queries)
+        'nested' => [
+            'prose'
+        ]
+    ],
+
     // Kirby headless options
     'headless' => [
         // Optional API token to use for authentication, also used
         // for for KQL endpoint
         'token' => env('KIRBY_HEADLESS_API_TOKEN'),
-
-        'blocks' => [
-            // Blocks that contain a nested blocks field, used to resolve
-            // image UUIDs to image objects inside nested blocks
-            'nested' => [
-                'prose'
-            ]
-        ],
 
         'panel' => [
             // Preview URL for the Panel preview button

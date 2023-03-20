@@ -45,6 +45,17 @@ Also, to enable the preview button in the frontend, set the environment variable
 
 ## Usage
 
+### Blocks
+
+With this Kirby project setup, every page-related component should be a block. The frontend fetches the same page query for all pages and renders the blocks accordingly.
+
+To add a new block:
+- Create a new blueprint in the [`site/blueprints/blocks`](./site/blueprints/blocks/) directory.
+- Add the new block to the [`blocks` field`](./site/blueprints/fields/blocks.yml) blueprint.
+- Don't forget to create the block [in the frontend](https://github.com/johannschopplich/cacao-kit-frontend/tree/main/components/Kirby/Block) as well.
+
+[Screenshot of the Cacao Kit blocks setup](./.github/screenshots/panel-blocks.png)
+
 ### Deployment
 
 > ℹ️ See [ploi-deploy.sh](./scripts/ploi-deploy.sh) for exemplary deployment instructions.
