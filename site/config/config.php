@@ -41,7 +41,7 @@ return [
         'files' => [
             // Block name as key, field name as value
             // Resolve the built-in `image` field of the `image` block
-            'image' => 'image'
+            'image' => ['image']
         ],
         // Resolve UUIDS inside nested blocks (for KQL queries)
         'nested' => [
