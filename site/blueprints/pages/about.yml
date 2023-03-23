@@ -1,0 +1,41 @@
+title:
+  en: About us
+  de: Über uns
+
+icon: ☎️
+
+status:
+  draft: true
+  listed: true
+
+options:
+  changeSlug: false
+  delete: false
+  preview: "{{ page.frontendUrl }}"
+
+tabs:
+  content:
+    icon: text
+    label: content
+    fields:
+      layouts:
+        label: Layout
+        type: layout
+        layouts:
+          - "1/1"
+          - "1/2, 1/2"
+          - "1/3, 1/3, 1/3"
+
+  meta:
+    icon: folder-structure
+    label: Meta
+    columns:
+      - width: 1/2
+        sections:
+          pages: sections/pages
+          images: sections/images
+
+      - width: 1/2
+        sections:
+          cover: sections/cover
+          description: sections/description

@@ -5,6 +5,7 @@ type: files
 multiple: false
 uploads:
   template: image
+translate: false
 help:
   en: A preview image for the page that is displayed in search engines and social networks.
   de: Ein Vorschaubild für die Seite, das in Suchmaschinen und sozialen Netzwerken angezeigt wird.

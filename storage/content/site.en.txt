@@ -10,4 +10,4 @@ Cover: - file://Sa3na5cuOis6wUDv
 
 ----
 
-Description: 🍫 Best practice Nuxt starter for headless Kirby CMS
+Description: 🍫 Best practice Nuxt starter for a headless Kirby CMS
