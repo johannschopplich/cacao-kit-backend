@@ -6,11 +6,11 @@ Blocks: [{"content":{"text":"Notes"},"id":"dfad0f8b-f31d-46fc-844b-585d491fb0aa"
 
 ----
 
-Cover:
+Cover: 
 
 ----
 
-Description:
+Description: 
 
 ----
 

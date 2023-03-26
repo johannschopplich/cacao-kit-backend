@@ -1,16 +1,10 @@
 title:
-  en: About us
-  de: Über uns
+  en: Home
+  de: Startseite
 
-icon: ☎️
-
-status:
-  draft: true
-  listed: true
+icon: 🏠
 
 options:
-  changeSlug: false
-  delete: false
   preview: "{{ page.frontendUrl }}"
 
 tabs:

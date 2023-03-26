@@ -44,7 +44,7 @@ To add a new block:
 - Add the new block to the [`blocks` field](./site/blueprints/fields/blocks.yml) blueprint.
 - Don't forget to create the block [in the frontend](https://github.com/johannschopplich/cacao-kit-frontend/tree/main/components/Kirby/Block) as well.
 
-![Screenshot of the Cacao Kit blocks setup](./.github/screenshots/panel-blocks.png)
+![Screenshot of the Cacao Kit blocks setup](./storage/content/home/cacao-kit-blocks-screenshot.png)
 
 ### Deployment
 

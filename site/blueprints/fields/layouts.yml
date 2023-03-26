@@ -1,5 +1,9 @@
-label: Prose
-type: blocks
+label: Layouts
+type: layout
+layouts:
+  - "1/1"
+  - "1/2, 1/2"
+  - "1/3, 1/3, 1/3"
 fieldsets:
   text:
     label: Text
@@ -25,3 +29,8 @@ fieldsets:
   #   fieldsets:
   #     - code
   #     - markdown
+  grids:
+    label: Grids
+    type: group
+    fieldsets:
+      - grid-notes
