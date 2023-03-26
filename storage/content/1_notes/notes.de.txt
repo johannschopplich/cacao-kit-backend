@@ -2,7 +2,7 @@ Title: Notizen
 
 ----
 
-Slug: features
+Slug: notizen
 
 ----
 
