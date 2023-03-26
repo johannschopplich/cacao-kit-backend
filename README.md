@@ -1,15 +1,4 @@
-<p align="center">
-  <img src="./.github/icon.svg" alt="Cacao Kit Backend" width="128" height="128">
-</p>
-
-<h3 align="center">Cacao Kit (Backend)</h3>
-
-<p align="center">
-  Headless Kirby setup for the Cacao Kit frontend<br>
-  <a href="https://github.com/johannschopplich/cacao-kit-frontend"><strong>Cacao Kit frontend »</strong></a>
-</p>
-
-<br>
+[![Cacao Kit Backend](./.github/og-image.png)](https://cacao.jhnn.work)
 
 # Cacao Kit (Backend)
 
@@ -52,7 +41,7 @@ With this Kirby project setup, every page-related component should be a block. T
 To add a new block:
 
 - Create a new blueprint in the [`site/blueprints/blocks`](./site/blueprints/blocks/) directory.
-- Add the new block to the [`blocks` field`](./site/blueprints/fields/blocks.yml) blueprint.
+- Add the new block to the [`blocks` field](./site/blueprints/fields/blocks.yml) blueprint.
 - Don't forget to create the block [in the frontend](https://github.com/johannschopplich/cacao-kit-frontend/tree/main/components/Kirby/Block) as well.
 
 ![Screenshot of the Cacao Kit blocks setup](./.github/screenshots/panel-blocks.png)
