@@ -61,7 +61,7 @@ If you prefer to use a block-first approach, you can add new blocks to your Kirb
 
 - Create a new blueprint in the [`site/blueprints/blocks`](./site/blueprints/blocks/) directory.
 - Add the new block to the [`blocks` field](./site/blueprints/fields/blocks.yml) blueprint.
-- Don't forget to create the block Vue component [in the frontend](https://github.com/johannschopplich/cacao-kit-frontend/tree/main/components/Kirby/Block) as well and import it in the [`KirbyBlocks` component](https://github.com/johannschopplich/cacao-kit-frontend/blob/main/components/Kirby/Blocks.vue).
+- Finally, follow the block guide [in the Cacao Kit frontend](https://github.com/johannschopplich/cacao-kit-frontends#how-to-add-a-new-block).
 
 ### Deployment
 
