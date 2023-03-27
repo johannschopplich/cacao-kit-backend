@@ -20,13 +20,45 @@ tabs:
     fields:
       layouts: fields/layouts
 
+  contact:
+    icon: map
+    label: Contact
+    columns:
+      - width: 1/2
+        fields:
+          address:
+            label: Address
+            type: writer
+            inline: true
+          email:
+            label: Email
+            type: email
+          phone:
+            label: Phone
+            type: tel
+      - width: 1/2
+        fields:
+          social:
+            label: On the web
+            type: structure
+            columns:
+              platform: true
+            fields:
+              platform:
+                label: Platform
+                type: text
+                width: 1/2
+              url:
+                label: URL
+                type: url
+                width: 1/2
+
   meta:
     icon: folder-structure
     label: Meta
     columns:
       - width: 1/2
         sections:
-          pages: sections/pages
           images: sections/images
 
       - width: 1/2
