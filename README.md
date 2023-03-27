@@ -2,7 +2,16 @@
 
 # Cacao Kit (Backend)
 
-This starter kit is based on the [Kirby Headless Starter](https://github.com/johannschopplich/kirby-headless-starter) and provides a ready-to-use headless Kirby setup for the [Cacao Kit frontend](https://github.com/johannschopplich/cacao-kit-frontend).
+
+This headless starter kit is based on the [Kirby Headless Starter](https://github.com/johannschopplich/kirby-headless-starter) and provides a ready-to-use headless Kirby setup for the [Cacao Kit frontend](https://github.com/johannschopplich/cacao-kit-frontend). Demo content is included to showcase the starter's features.
+
+With this Kirby project setup, every page-related component is a block. By default, the frontend fetches the same **page query** for every page and renders the blocks or layouts accordingly. This way, the backend defines the content structure while the routing doesn't has to be re-implemented in the frontend.
+
+Of course, you can also use custom Kirby fields in your blueprint and create Nuxt pages in the frontend with custom queries. See the about page for an example.
+
+If the block-first architecture doesn't fit your needs, you can still build upon this starter and use Kirby's built-in blocks. See the [cookbook](#cookbook) for more information.
+
+![Screenshot of the Cacao Kit blocks setup](./storage/content/home/cacao-kit-blocks-screenshot.png)
 
 ## Prerequisites
 
@@ -34,17 +43,25 @@ Also, to enable the preview button in the frontend, set the environment variable
 
 ## Usage
 
+> [📖 Read the Cacao Kit frontend documentation](https://github.com/johannschopplich/cacao-kit-frontend)
+
+> [📖 Read the Kirby Headless Starter documentation](https://github.com/johannschopplich/kirby-headless-starter), from which this starter is based on.
+
 ### Blocks
 
-With this Kirby project setup, every page-related component should be a block. The frontend fetches the same page query for all pages and renders the blocks accordingly.
+By default, every page-related component is a block. The [`blocks` field](./site/blueprints/fields/blocks.yml) blueprint defines the blocks that are available for each page. It contains page-building blocks like a notes grid, but also the `prose` block, which is used to render WYSIWYG content (it's another blocks' field under the hood).
 
-To add a new block:
+If you don't want to nest blocks, you can add Kirby's built-in block `fieldsets` to the `blocks` field blueprint.
+
+## Cookbook
+
+### How to Add a New Block
+
+If you prefer to use a block-first approach, you can add new blocks to your Kirby project by following these steps:
 
 - Create a new blueprint in the [`site/blueprints/blocks`](./site/blueprints/blocks/) directory.
 - Add the new block to the [`blocks` field](./site/blueprints/fields/blocks.yml) blueprint.
-- Don't forget to create the block [in the frontend](https://github.com/johannschopplich/cacao-kit-frontend/tree/main/components/Kirby/Block) as well.
-
-![Screenshot of the Cacao Kit blocks setup](./storage/content/home/cacao-kit-blocks-screenshot.png)
+- Don't forget to create the block Vue component [in the frontend](https://github.com/johannschopplich/cacao-kit-frontend/tree/main/components/Kirby/Block) as well and import it in the [`KirbyBlocks` component](https://github.com/johannschopplich/cacao-kit-frontend/blob/main/components/Kirby/Blocks.vue).
 
 ### Deployment
 
