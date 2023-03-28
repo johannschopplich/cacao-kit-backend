@@ -2,10 +2,9 @@
 
 # Cacao Kit (Backend)
 
-
 This headless starter kit is based on the [Kirby Headless Starter](https://github.com/johannschopplich/kirby-headless-starter) and provides a ready-to-use headless Kirby setup for the [Cacao Kit frontend](https://github.com/johannschopplich/cacao-kit-frontend). Demo content is included to showcase the starter's features.
 
-With this Kirby project setup, every page-related component is a block. By default, the frontend fetches the same **page query** for every page and renders the blocks or layouts accordingly. This way, the backend defines the content structure while the routing doesn't has to be re-implemented in the frontend.
+With this Kirby project setup, every page-related component is a block. By default, the frontend fetches the same **page query** for every page and renders the blocks or layouts accordingly. This way, the backend defines the content structure while the routing doesn't have to be re-implemented in the frontend.
 
 Of course, you can also use custom Kirby fields in your blueprint and create Nuxt pages in the frontend with custom queries. See the about page for an example.
 
