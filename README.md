@@ -62,6 +62,8 @@ If you prefer to use a block-first approach, you can add new blocks to your Kirb
 - Add the new block to the [`blocks` field](./site/blueprints/fields/blocks.yml) blueprint.
 - Finally, follow the block guide [in the Cacao Kit frontend](https://github.com/johannschopplich/cacao-kit-frontends#how-to-add-a-new-block).
 
+> ℹ️ If the new block contains a `files` field, make sure to follow the [`toResolvedBlocks()` field method guide](https://github.com/johannschopplich/kirby-headless#toresolvedblocks) if you want to resolve image UUIDs to file objects on the server.
+
 ### Deployment
 
 > ℹ️ See [ploi-deploy.sh](./scripts/ploi-deploy.sh) for exemplary deployment instructions.
