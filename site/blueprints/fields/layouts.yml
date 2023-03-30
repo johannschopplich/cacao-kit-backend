@@ -29,8 +29,11 @@ fieldsets:
   #   fieldsets:
   #     - code
   #     - markdown
-  grids:
-    label: Grids
+  sections:
+    label:
+      de: Abschnitte
+      en: Sections
     type: group
     fieldsets:
-      - grid-notes
+      - notes-grid
+      - team-structure

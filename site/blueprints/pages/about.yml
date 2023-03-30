@@ -22,30 +22,42 @@ tabs:
 
   contact:
     icon: map
-    label: Contact
+    label:
+      en: Contact
+      de: Kontakt
     columns:
       - width: 1/2
         fields:
           address:
-            label: Address
+            label:
+              en: Address
+              de: Adresse
             type: writer
             inline: true
           email:
-            label: Email
+            label:
+              en: Email
+              de: E-Mail
             type: email
           phone:
-            label: Phone
+            label:
+              en: Phone
+              de: Telefon
             type: tel
       - width: 1/2
         fields:
           social:
-            label: On the web
+            label:
+              en: On the web
+              de: Im Netz
             type: structure
             columns:
               platform: true
             fields:
               platform:
-                label: Platform
+                label:
+                  en: Platform
+                  de: Plattform
                 type: text
                 width: 1/2
               url:

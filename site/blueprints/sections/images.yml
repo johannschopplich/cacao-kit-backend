@@ -5,8 +5,6 @@ label:
 templates:
   - image
   - blocks/image
-uploads:
-  template: image
 sortBy: filename desc
 empty:
   en: No images yet

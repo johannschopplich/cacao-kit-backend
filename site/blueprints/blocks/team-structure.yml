@@ -1,0 +1,23 @@
+name:
+  en: Team
+  de: Team
+icon: store
+preview: fields
+wysiwyg: true
+fields:
+  team:
+    label: Team
+    type: structure
+    fields:
+      name:
+        label: Name
+        type: text
+        width: 1/2
+      image:
+        label: Image
+        type: files
+        query: page.files.template(["image", "blocks/image"])
+        uploads:
+          template: image
+        multiple: false
+        width: 1/2

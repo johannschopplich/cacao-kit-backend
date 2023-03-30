@@ -16,7 +16,7 @@ fieldsets:
     label: Grids
     type: group
     fieldsets:
-      - grid-notes
+      - notes-grid
   meta:
     label: Meta
     type: group

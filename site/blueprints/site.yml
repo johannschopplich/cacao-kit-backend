@@ -58,6 +58,6 @@ tabs:
             fields:
               cover:
                 extends: fields/cover
-                query: site.images.template('image')
+                query: site.files.template("image")
                 translate: false
               description: fields/description

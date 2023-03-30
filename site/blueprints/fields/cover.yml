@@ -2,9 +2,10 @@ label:
   en: Cover
   de: Vorschaubild
 type: files
-multiple: false
+query: page.files.template(["image", "blocks/image"])
 uploads:
   template: image
+multiple: false
 translate: false
 help:
   en: A preview image for the page that is displayed in search engines and social networks.
