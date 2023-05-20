@@ -49,6 +49,17 @@ return [
         ]
     ],
 
+    'resolvers' => [
+        // Resolver for each file object from a `files` field
+        'files' => fn ($image) => [
+            'url' => $image->url(),
+            'width' => $image->width(),
+            'height' => $image->height(),
+            'srcset' => $image->srcset(),
+            'alt' => $image->alt()->value()
+        ]
+    ],
+
     // Kirby headless options
     'headless' => [
         // Optional API token to use for authentication, also used
