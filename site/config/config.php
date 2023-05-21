@@ -46,17 +46,17 @@ return [
         // Resolve UUIDS inside nested blocks (for KQL queries)
         'nested' => [
             'prose'
-        ]
-    ],
-
-    'resolvers' => [
-        // Resolver for each file object from a `files` field
-        'files' => fn ($image) => [
-            'url' => $image->url(),
-            'width' => $image->width(),
-            'height' => $image->height(),
-            'srcset' => $image->srcset(),
-            'alt' => $image->alt()->value()
+        ],
+        // Customizable methods used to resolve UUIDs
+        'resolvers' => [
+            // Resolver for each file object from a `files` field
+            'files' => fn ($image) => [
+                'url' => $image->url(),
+                'width' => $image->width(),
+                'height' => $image->height(),
+                'srcset' => $image->srcset(),
+                'alt' => $image->alt()->value()
+            ]
         ]
     ],
 
