@@ -3,6 +3,7 @@
 return [
 
     'debug' => env('KIRBY_DEBUG', false),
+    'yaml.handler' => 'symfony',
 
     'languages' => env('KIRBY_MULTILANG', false),
 
