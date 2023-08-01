@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d10ad2107bca9f4ad0f5a81b0aa21889",
+    "content-hash": "2a4bb4caefc610cad78ff83b2ee75805",
     "packages": [
         {
             "name": "claviska/simpleimage",
@@ -213,16 +213,16 @@
         },
         {
             "name": "getkirby/cms",
-            "version": "3.9.5",
+            "version": "3.9.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/getkirby/kirby.git",
-                "reference": "6b5dda600472b59a3a779f7e6b8e9e130cc414a1"
+                "reference": "ee2669e6dd091399fd7981381e1bd8cbd94d90a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/getkirby/kirby/zipball/6b5dda600472b59a3a779f7e6b8e9e130cc414a1",
-                "reference": "6b5dda600472b59a3a779f7e6b8e9e130cc414a1",
+                "url": "https://api.github.com/repos/getkirby/kirby/zipball/ee2669e6dd091399fd7981381e1bd8cbd94d90a6",
+                "reference": "ee2669e6dd091399fd7981381e1bd8cbd94d90a6",
                 "shasum": ""
             },
             "require": {
@@ -310,7 +310,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2023-06-07T12:10:15+00:00"
+            "time": "2023-07-31T10:54:06+00:00"
         },
         {
             "name": "getkirby/composer-installer",
@@ -527,16 +527,16 @@
         },
         {
             "name": "johannschopplich/kirby-headless",
-            "version": "1.5.6",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johannschopplich/kirby-headless.git",
-                "reference": "e7be7e9fccbb3b0e31a600b8f3fcef4ff772afaf"
+                "reference": "7f757edd9af903737b6a21978368909aea5a38f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johannschopplich/kirby-headless/zipball/e7be7e9fccbb3b0e31a600b8f3fcef4ff772afaf",
-                "reference": "e7be7e9fccbb3b0e31a600b8f3fcef4ff772afaf",
+                "url": "https://api.github.com/repos/johannschopplich/kirby-headless/zipball/7f757edd9af903737b6a21978368909aea5a38f1",
+                "reference": "7f757edd9af903737b6a21978368909aea5a38f1",
                 "shasum": ""
             },
             "require": {
@@ -569,22 +569,22 @@
             ],
             "support": {
                 "issues": "https://github.com/johannschopplich/kirby-headless/issues",
-                "source": "https://github.com/johannschopplich/kirby-headless/tree/v1.5.6"
+                "source": "https://github.com/johannschopplich/kirby-headless/tree/v1.6.0"
             },
-            "time": "2023-06-13T11:13:57+00:00"
+            "time": "2023-08-01T20:27:57+00:00"
         },
         {
             "name": "johannschopplich/kirby-helpers",
-            "version": "4.0.3",
+            "version": "4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johannschopplich/kirby-helpers.git",
-                "reference": "da0558390f75731ade5debcc4b4629a3ec82b352"
+                "reference": "fb072e103d512d6440a205f2a7e83a6e31e0473e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johannschopplich/kirby-helpers/zipball/da0558390f75731ade5debcc4b4629a3ec82b352",
-                "reference": "da0558390f75731ade5debcc4b4629a3ec82b352",
+                "url": "https://api.github.com/repos/johannschopplich/kirby-helpers/zipball/fb072e103d512d6440a205f2a7e83a6e31e0473e",
+                "reference": "fb072e103d512d6440a205f2a7e83a6e31e0473e",
                 "shasum": ""
             },
             "require": {
@@ -633,9 +633,9 @@
             ],
             "support": {
                 "issues": "https://github.com/johannschopplich/kirby-helpers/issues",
-                "source": "https://github.com/johannschopplich/kirby-helpers/tree/v4.0.3"
+                "source": "https://github.com/johannschopplich/kirby-helpers/tree/v4.1.0"
             },
-            "time": "2023-03-07T15:45:54+00:00"
+            "time": "2023-07-07T14:39:23+00:00"
         },
         {
             "name": "laminas/laminas-escaper",

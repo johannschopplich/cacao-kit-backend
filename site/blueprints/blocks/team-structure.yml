@@ -21,3 +21,7 @@ fields:
           template: image
         multiple: false
         width: 1/2
+      link:
+        label: Links
+        type: pages
+        multiple: false

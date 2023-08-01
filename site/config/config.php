@@ -44,6 +44,9 @@ return [
             // Resolve the built-in `image` field of the `image` block
             'image' => ['image']
         ],
+        'pages' => [
+            'intro' => ['link']
+        ],
         // Resolve UUIDS inside nested blocks (for KQL queries)
         'nested' => [
             'prose'
