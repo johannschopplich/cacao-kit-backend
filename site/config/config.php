@@ -54,7 +54,7 @@ return [
         // Customizable methods used to resolve UUIDs
         'resolvers' => [
             // Resolver for each file object from a `files` field
-            'files' => fn ($image) => [
+            'files' => fn (\Kirby\Cms\File $image) => [
                 'url' => $image->url(),
                 'width' => $image->width(),
                 'height' => $image->height(),
