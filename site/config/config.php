@@ -13,8 +13,11 @@ return [
     ],
 
     'thumbs' => [
-        'quality' => '80',
         'format' => 'webp',
+        'quality' => 80,
+        'presets' => [
+            'default' => ['format' => 'webp', 'quality' => 80],
+        ],
         'srcsets' => [
             'default' => [360, 720, 1024, 1280, 1536]
         ]
@@ -28,9 +31,9 @@ return [
     ],
 
     // Enable basic authentication for the API and thus KQL
-    'api' => [
-        // 'basicAuth' => true
-    ],
+    // 'api' => [
+    //     'basicAuth' => true
+    // ],
 
     // Default to token-based authentication
     'kql' => [
