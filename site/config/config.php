@@ -35,23 +35,13 @@ return [
         'auth' => 'bearer'
     ],
 
+    // See: https://github.com/johannschopplich/kirby-headless#toresolvedblocks
     'blocksResolver' => [
-        // Resolve UUIDs inside blocks (for KQL queries)
-        'files' => [
-            // Block name as key, field name as value
-            // Resolve the built-in `image` field of the `image` block
-            'image' => ['image']
-        ],
-        'pages' => [
-            'intro' => ['link']
-        ],
         // Resolve UUIDS inside nested blocks (for KQL queries)
         'nested' => [
             'prose'
         ],
-        // Customizable methods used to resolve UUIDs
-        'resolvers' => [
-            // Resolver for each file object from a `files` field
+        'defaultResolvers' => [
             'files' => fn (\Kirby\Cms\File $image) => [
                 'url' => $image->url(),
                 'width' => $image->width(),

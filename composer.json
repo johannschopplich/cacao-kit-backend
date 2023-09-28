@@ -2,8 +2,8 @@
   "require": {
     "getkirby/cms": "^3.9",
     "getkirby/kql": "^2.0",
-    "johannschopplich/kirby-helpers": "^4.0",
-    "johannschopplich/kirby-headless": "^1.6",
+    "johannschopplich/kirby-helpers": "^4.1",
+    "johannschopplich/kirby-headless": "^2.0",
     "jg/kirby-fields-block": "^1.2"
   },
   "scripts": {
