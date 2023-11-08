@@ -1,16 +1,10 @@
 {
   "require": {
     "getkirby/cms": "^4",
-    "getkirby/kql": "dev-v4-compat",
+    "getkirby/kql": "^2.1",
     "johannschopplich/kirby-helpers": "^4.2",
     "johannschopplich/kirby-headless": "^2.2"
   },
-  "repositories": [
-    {
-      "url": "https://github.com/johannschopplich/kql-fork.git",
-      "type": "git"
-    }
-  ],
   "minimum-stability": "dev",
   "prefer-stable": true,
   "scripts": {

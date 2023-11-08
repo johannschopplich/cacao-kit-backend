@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5c05e59b68254f0d6937e6ca13cb95b3",
+    "content-hash": "e1cdf7ff299c916aed3517193adf66bd",
     "packages": [
         {
             "name": "christian-riesen/base32",
@@ -422,11 +422,17 @@
         },
         {
             "name": "getkirby/kql",
-            "version": "dev-v4-compat",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/johannschopplich/kql-fork.git",
-                "reference": "d08985b12e16b497f78051d2ebe843213c83fd77"
+                "url": "https://github.com/getkirby/kql.git",
+                "reference": "32fb9e67ff5fd65ab959be04c4ba2e89fb1d0420"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/getkirby/kql/zipball/32fb9e67ff5fd65ab959be04c4ba2e89fb1d0420",
+                "reference": "32fb9e67ff5fd65ab959be04c4ba2e89fb1d0420",
+                "shasum": ""
             },
             "require": {
                 "getkirby/cms": ">=3.8.2",
@@ -445,37 +451,7 @@
                     ]
                 }
             },
-            "scripts": {
-                "analyze": [
-                    "@analyze:composer",
-                    "@analyze:psalm",
-                    "@analyze:phpcpd",
-                    "@analyze:phpmd"
-                ],
-                "analyze:composer": [
-                    "composer validate --strict --no-check-version --no-check-all"
-                ],
-                "analyze:phpcpd": [
-                    "phpcpd --fuzzy --exclude tests --exclude vendor ."
-                ],
-                "analyze:phpmd": [
-                    "phpmd . ansi phpmd.xml.dist --exclude 'dependencies/*,tests/*,vendor/*'"
-                ],
-                "analyze:psalm": [
-                    "psalm"
-                ],
-                "ci": [
-                    "@fix",
-                    "@analyze",
-                    "@test"
-                ],
-                "fix": [
-                    "php-cs-fixer fix"
-                ],
-                "test": [
-                    "phpunit --stderr --coverage-html=tests/coverage"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -501,11 +477,17 @@
             ],
             "support": {
                 "email": "support@getkirby.com",
-                "issues": "https://github.com/getkirby/kql/issues",
                 "forum": "https://forum.getkirby.com",
+                "issues": "https://github.com/getkirby/kql/issues",
                 "source": "https://github.com/getkirby/kql"
             },
-            "time": "2023-10-03T20:07:14+00:00"
+            "funding": [
+                {
+                    "url": "https://getkirby.com/buy",
+                    "type": "custom"
+                }
+            ],
+            "time": "2023-11-08T08:23:10+00:00"
         },
         {
             "name": "graham-campbell/result-type",
@@ -1714,9 +1696,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "getkirby/kql": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
