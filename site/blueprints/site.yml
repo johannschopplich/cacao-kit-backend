@@ -50,6 +50,10 @@ tabs:
                   en: Footer
                   de: Fußzeile
                 type: pages
+                image:
+                  query: page.cover.toFile
+                  cover: true
+                  back: white
 
       - width: 1/2
         sections:
