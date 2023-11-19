@@ -16,7 +16,7 @@ If the block-first architecture doesn't fit your needs, you can still build upon
 
 - PHP 8.1+
 
-> Kirby is not a free software. You can try it for free on your local machine but in order to run Kirby on a public server you must purchase a [valid license](https://getkirby.com/buy).
+Kirby is not a free software. You can try it for free on your local machine but in order to run Kirby on a public server you must purchase a [valid license](https://getkirby.com/buy).
 
 ## Setup
 
@@ -69,8 +69,7 @@ If you prefer to use a block-first approach, you can add new blocks to your Kirb
 
 > [!NOTE]
 > See [ploi-deploy.sh](./scripts/ploi-deploy.sh) for exemplary deployment instructions.
-
-> [!NOTE]
+>
 > Some hosting environments require uncommenting `RewriteBase /` in [`.htaccess`](./public/.htaccess) to make site links work.
 
 ## License
