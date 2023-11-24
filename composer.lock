@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "47f803b58f2dde0b02eb6ccd68fe3404",
+    "content-hash": "bec726363536dfdcd215284f2307e294",
     "packages": [
         {
             "name": "christian-riesen/base32",
@@ -606,16 +606,16 @@
         },
         {
             "name": "johannschopplich/kirby-helpers",
-            "version": "4.2.1",
+            "version": "5.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johannschopplich/kirby-helpers.git",
-                "reference": "3e1eb7d24b9fd8fa1ddc2471ba5ae72732c8e92b"
+                "reference": "5ca86d8a2c94155183563fa65b6ae285e523e805"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johannschopplich/kirby-helpers/zipball/3e1eb7d24b9fd8fa1ddc2471ba5ae72732c8e92b",
-                "reference": "3e1eb7d24b9fd8fa1ddc2471ba5ae72732c8e92b",
+                "url": "https://api.github.com/repos/johannschopplich/kirby-helpers/zipball/5ca86d8a2c94155183563fa65b6ae285e523e805",
+                "reference": "5ca86d8a2c94155183563fa65b6ae285e523e805",
                 "shasum": ""
             },
             "require": {
@@ -664,9 +664,9 @@
             ],
             "support": {
                 "issues": "https://github.com/johannschopplich/kirby-helpers/issues",
-                "source": "https://github.com/johannschopplich/kirby-helpers/tree/v4.2.1"
+                "source": "https://github.com/johannschopplich/kirby-helpers/tree/v5.0.0"
             },
-            "time": "2023-10-03T14:43:50+00:00"
+            "time": "2023-11-19T12:33:19+00:00"
         },
         {
             "name": "laminas/laminas-escaper",
