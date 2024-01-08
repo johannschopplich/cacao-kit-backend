@@ -43,9 +43,12 @@ return [
 
     // See: https://github.com/johannschopplich/kirby-headless#toresolvedblocks
     'blocksResolver' => [
-        // Resolve UUIDS inside nested blocks (for KQL queries)
-        'nested' => [
-            'prose'
+        'resolvers' => [
+            // Resolve permalinks (containing UUIDs) to URLs inside the text field
+            // of the text block
+            'text:text' => function (\Kirby\Content\Field $field, \Kirby\Cms\Block $block) {
+                return $field->permalinksToUrls()->value();
+            }
         ],
         'defaultResolvers' => [
             'files' => fn (\Kirby\Cms\File $image) => [

@@ -14,7 +14,7 @@ If the block-first architecture doesn't fit your needs, you can still build upon
 
 ## Prerequisites
 
-- PHP 8.1+
+- PHP 8.2+
 
 Kirby is not a free software. You can try it for free on your local machine but in order to run Kirby on a public server you must purchase a [valid license](https://getkirby.com/buy).
 
@@ -42,13 +42,13 @@ Also, to enable the preview button in the frontend, set the environment variable
 
 ## Usage
 
-> [📖 Read the Cacao Kit frontend documentation](https://github.com/johannschopplich/cacao-kit-frontend)
+> [!TIP] > [📖 Read the Cacao Kit frontend documentation](https://github.com/johannschopplich/cacao-kit-frontend)
 
-> [📖 Read the Kirby Headless Starter documentation](https://github.com/johannschopplich/kirby-headless-starter), from which this starter is based on.
+> [!NOTE] > [📖 Read the Kirby Headless Starter documentation](https://github.com/johannschopplich/kirby-headless-starter), from which this starter is based on.
 
 ### Blocks
 
-By default, every page-related component is a block. The [`blocks` field](./site/blueprints/fields/blocks.yml) blueprint defines the blocks that are available for each page. It contains page-building blocks like a notes grid, but also the `prose` block, which is used to render WYSIWYG content (it's another blocks' field under the hood).
+By default, every page-related component is a block. The [`blocks` field](./site/blueprints/fields/blocks.yml) blueprint defines the blocks that are available for each page. It contains page-building blocks like a notes grid, and other custom blocks.
 
 If you don't want to nest blocks, you can add Kirby's built-in block `fieldsets` to the `blocks` field blueprint.
 

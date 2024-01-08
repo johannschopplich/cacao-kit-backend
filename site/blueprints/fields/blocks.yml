@@ -4,14 +4,30 @@ label:
 type: blocks
 fieldsets:
   text:
-    label:
-      en: Sections
-      de: Abschnitte
+    label: Text
     type: group
     fieldsets:
       - intro
       - heading
-      - prose
+      - text
+      - list
+      - quote
+      - line
+  media:
+    label:
+      de: Medien
+      en: Media
+    type: group
+    fieldsets:
+      - image
+      - gallery
+      - video
+  # code:
+  #   label: Code
+  #   type: group
+  #   fieldsets:
+  #     - code
+  #     - markdown
   grids:
     label: Grids
     type: group
