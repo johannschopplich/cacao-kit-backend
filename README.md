@@ -74,4 +74,4 @@ If you prefer to use a block-first approach, you can add new blocks to your Kirb
 
 ## License
 
-[MIT](./LICENSE) License © 2023-present [Johann Schopplich](https://github.com/johannschopplich)
+[MIT](./LICENSE) License © 2023-PRESENT [Johann Schopplich](https://github.com/johannschopplich)
