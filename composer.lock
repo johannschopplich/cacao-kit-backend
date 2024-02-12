@@ -553,16 +553,16 @@
         },
         {
             "name": "johannschopplich/kirby-headless",
-            "version": "3.0.1",
+            "version": "3.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johannschopplich/kirby-headless.git",
-                "reference": "e606b23868b626c90a61d4200df038acbaf12e45"
+                "reference": "54bef29e8c0e3ab40dc48160ff759e052937e770"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johannschopplich/kirby-headless/zipball/e606b23868b626c90a61d4200df038acbaf12e45",
-                "reference": "e606b23868b626c90a61d4200df038acbaf12e45",
+                "url": "https://api.github.com/repos/johannschopplich/kirby-headless/zipball/54bef29e8c0e3ab40dc48160ff759e052937e770",
+                "reference": "54bef29e8c0e3ab40dc48160ff759e052937e770",
                 "shasum": ""
             },
             "require": {
@@ -600,7 +600,7 @@
             ],
             "support": {
                 "issues": "https://github.com/johannschopplich/kirby-headless/issues",
-                "source": "https://github.com/johannschopplich/kirby-headless/tree/v3.0.1"
+                "source": "https://github.com/johannschopplich/kirby-headless/tree/v3.0.3"
             },
             "funding": [
                 {
@@ -608,7 +608,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2024-02-12T06:41:03+00:00"
+            "time": "2024-02-12T08:02:19+00:00"
         },
         {
             "name": "laminas/laminas-escaper",
