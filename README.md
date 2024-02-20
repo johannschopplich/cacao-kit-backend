@@ -14,9 +14,9 @@ If the block-first architecture doesn't fit your needs, you can still build upon
 
 ## Prerequisites
 
-- PHP 8.2+
+- PHP 8.1+
 
-Kirby is not a free software. You can try it for free on your local machine but in order to run Kirby on a public server you must purchase a [valid license](https://getkirby.com/buy).
+Kirby is not free software. However, you can try Kirby and the Starterkit on your local machine or on a test server as long as you need to make sure it is the right tool for your next project. … and when you’re convinced, [buy your license](https://getkirby.com/buy).
 
 ## Setup
 
@@ -42,9 +42,8 @@ Also, to enable the preview button in the frontend, set the environment variable
 
 ## Usage
 
-> [!TIP] > [📖 Read the Cacao Kit frontend documentation](https://github.com/johannschopplich/cacao-kit-frontend)
-
-> [!NOTE] > [📖 Read the Kirby Headless Starter documentation](https://github.com/johannschopplich/kirby-headless-starter), from which this starter is based on.
+> [!TIP]
+> [📖 Read the Cacao Kit frontend documentation](https://github.com/johannschopplich/cacao-kit-frontend) or [📖 read the Kirby Headless Starter documentation](https://github.com/johannschopplich/kirby-headless-starter), from which this starter is based on.
 
 ### Blocks
 
