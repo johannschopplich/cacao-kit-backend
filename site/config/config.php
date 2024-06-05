@@ -1,5 +1,6 @@
 <?php
 
+use Kirby\Cms\App;
 use Kirby\Cms\Block;
 use Kirby\Cms\File;
 use Kirby\Content\Field;
@@ -48,8 +49,8 @@ return [
     // See: https://github.com/johannschopplich/kirby-headless#toresolvedblocks
     'blocksResolver' => [
         'resolvers' => [
-            // Resolve permalinks (containing UUIDs) to URLs inside the text field
-            // of the text block
+            // Resolve permalinks (containing UUIDs) to URLs inside the
+            // field `text` of the `prose` block
             'text:text' => function (Field $field, Block $block) {
                 return $field->permalinksToUrls()->value();
             },
@@ -84,6 +85,15 @@ return [
                 'alt' => $image->alt()->value()
             ]
         ]
+    ],
+
+    // See: https://github.com/johannschopplich/kirby-headless#resolvepermalinks
+    'permalinksResolver' => [
+        // Strip the origin from URLs
+        'urlParser' => function (string $url, App $kirby) {
+            $path = parse_url($url, PHP_URL_PATH);
+            return $path;
+        }
     ],
 
     // Kirby headless options
