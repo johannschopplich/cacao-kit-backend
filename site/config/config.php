@@ -1,9 +1,6 @@
 <?php
 
 use Kirby\Cms\App;
-use Kirby\Cms\Block;
-use Kirby\Cms\File;
-use Kirby\Content\Field;
 
 return [
 
@@ -12,6 +9,7 @@ return [
     'yaml' => [
         'handler' => 'symfony'
     ],
+
     'date' => [
         'handler' => 'intl'
     ],
@@ -46,46 +44,9 @@ return [
         'auth' => 'bearer'
     ],
 
+    // Blocks resolver configuration
     // See: https://github.com/johannschopplich/kirby-headless#toresolvedblocks
-    'blocksResolver' => [
-        'resolvers' => [
-            // Resolve permalinks (containing UUIDs) to URLs inside the
-            // field `text` of the `prose` block
-            'text:text' => function (Field $field, Block $block) {
-                return $field->permalinksToUrls()->value();
-            },
-            // Resolve the team structure server-side to handle image transformations
-            // and deep page links
-            'team-structure:team' => function (Field $field, Block $block) {
-                $structure = $field->toStructure();
-
-                return $structure->map(function ($item) {
-                    $image = $item->image()->toFile();
-
-                    return [
-                        'name' => $item->name()->value(),
-                        'image' => [
-                            'url' => $image?->url(),
-                            'width' => $image?->width(),
-                            'height' => $image?->height(),
-                            'srcset' => $image?->srcset(),
-                            'alt' => $image?->alt()->value()
-                        ],
-                        'link' => $item->link()->toPage()?->uri()
-                    ];
-                })->values();
-            }
-        ],
-        'defaultResolvers' => [
-            'files' => fn (File $image) => [
-                'url' => $image->url(),
-                'width' => $image->width(),
-                'height' => $image->height(),
-                'srcset' => $image->srcset(),
-                'alt' => $image->alt()->value()
-            ]
-        ]
-    ],
+    'blocksResolver' => require __DIR__ . '/blocks-resolver.php',
 
     // See: https://github.com/johannschopplich/kirby-headless#resolvepermalinks
     'permalinksResolver' => [
