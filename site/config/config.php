@@ -1,6 +1,7 @@
 <?php
 
 use Kirby\Cms\App;
+use Kirby\Cms\Page;
 
 return [
 
@@ -35,7 +36,7 @@ return [
     'cache' => [
         'pages' => [
             'active' => env('KIRBY_CACHE', false),
-            'ignore' => fn (\Kirby\Cms\Page $page) => $page->kirby()->user() !== null
+            'ignore' => fn (Page $page) => $page->kirby()->user() !== null
         ]
     ],
 
