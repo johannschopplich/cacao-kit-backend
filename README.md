@@ -14,7 +14,7 @@ If the block-first architecture doesn't fit your needs, you can still build upon
 
 ## Prerequisites
 
-- PHP 8.1+
+- PHP 8.2+
 
 Kirby is not free software. However, you can try Kirby and the Starterkit on your local machine or on a test server as long as you need to make sure it is the right tool for your next project. … and when you’re convinced, [buy your license](https://getkirby.com/buy).
 
