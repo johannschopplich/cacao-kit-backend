@@ -8,7 +8,7 @@ return [
     // Custom resolves for `block:field`
     'resolvers' => [
         // Resolve permalinks (containing UUIDs) to URLs inside the
-        // field `text` of the `prose` block
+        // field `text` of the `text` block
         'text:text' => function (Field $field, Block $block) {
             return $field->permalinksToUrls()->value();
         },
