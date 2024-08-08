@@ -22,20 +22,20 @@ return [
 
                 return [
                     'name' => $item->name()->value(),
-                    'image' => [
-                        'url' => $image?->url(),
-                        'width' => $image?->width(),
-                        'height' => $image?->height(),
-                        'srcset' => $image?->srcset(),
-                        'alt' => $image?->alt()->value()
-                    ],
+                    'image' => $image ? [
+                        'url' => $image->url(),
+                        'width' => $image->width(),
+                        'height' => $image->height(),
+                        'srcset' => $image->srcset(),
+                        'alt' => $image->alt()->value()
+                    ] : null,
                     'link' => $item->link()->toPage()?->uri()
                 ];
             })->values();
         }
     ],
     'defaultResolvers' => [
-        'files' => fn (File $image) => [
+        'files' => fn(File $image) => [
             'url' => $image->url(),
             'width' => $image->width(),
             'height' => $image->height(),
