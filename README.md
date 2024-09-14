@@ -62,7 +62,7 @@ If you prefer to use a block-first approach, you can add new blocks to your Kirb
 - Finally, follow the block guide [in the Cacao Kit frontend](https://github.com/johannschopplich/cacao-kit-frontends#how-to-add-a-new-block).
 
 > [!NOTE]
-> If the new block contains a `files` field, make sure to follow the [`toResolvedBlocks()` field method guide](https://github.com/johannschopplich/kirby-headless#toresolvedblocks) if you want to resolve image UUIDs to file objects on the server.
+> If the new block contains a `files` field, make sure to follow the [`toResolvedBlocks()` field method guide](https://kirby.tools/docs/headless/field-methods#toresolvedblocks) if you want to resolve image UUIDs to file objects on the server.
 
 ### Deployment
 
