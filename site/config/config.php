@@ -36,7 +36,7 @@ return [
     'cache' => [
         'pages' => [
             'active' => env('KIRBY_CACHE', false),
-            'ignore' => fn (Page $page) => $page->kirby()->user() !== null
+            'ignore' => fn(Page $page) => $page->kirby()->user() !== null
         ]
     ],
 
@@ -60,19 +60,13 @@ return [
 
     // Kirby headless options
     'headless' => [
-        // Enable returning Kirby templates as JSON
-        'globalRoutes' => true,
-
         // Optional API token to use for authentication, also used
         // for for KQL endpoint
         'token' => env('KIRBY_HEADLESS_API_TOKEN'),
 
         'panel' => [
             // Preview URL for the Panel preview button
-            'frontendUrl' => env('KIRBY_HEADLESS_FRONTEND_URL'),
-            // Redirect to the Panel if no authorization header is sent,
-            // useful for editors visiting the site directly
-            'redirect' => true
+            'frontendUrl' => env('KIRBY_HEADLESS_FRONTEND_URL')
         ],
 
         'cors' => [
