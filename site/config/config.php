@@ -43,16 +43,14 @@ return [
         ]
     ],
 
-    // Default to token-based authentication
     'kql' => [
         'auth' => 'bearer'
     ],
 
-    // Blocks resolver configuration
-    // See: https://github.com/johannschopplich/kirby-headless#toresolvedblocks
+    // See: https://kirby.tools/docs/headless/usage/field-methods#toresolvedblocks
     'blocksResolver' => require __DIR__ . '/blocks-resolver.php',
 
-    // See: https://github.com/johannschopplich/kirby-headless#resolvepermalinks
+    // See: https://kirby.tools/docs/headless/usage/field-methods#resolvepermalinks
     'permalinksResolver' => [
         // Strip the origin from URLs
         'urlParser' => function (string $url, App $kirby) {
@@ -61,22 +59,13 @@ return [
         }
     ],
 
-    // Kirby headless options
+    // See: https://kirby.tools/docs/headless/configuration/authentication
     'headless' => [
-        // Optional API token to use for authentication, also used
-        // for for KQL endpoint
         'token' => env('KIRBY_HEADLESS_API_TOKEN'),
 
         'panel' => [
             // Preview URL for the Panel preview button
             'frontendUrl' => env('KIRBY_HEADLESS_FRONTEND_URL')
-        ],
-
-        'cors' => [
-            'allowOrigin' => env('KIRBY_HEADLESS_ALLOW_ORIGIN', '*'),
-            'allowMethods' => env('KIRBY_HEADLESS_ALLOW_METHODS', 'GET, POST, OPTIONS'),
-            'allowHeaders' => env('KIRBY_HEADLESS_ALLOW_HEADERS', 'Accept, Content-Type, Authorization, X-Language'),
-            'maxAge' => env('KIRBY_HEADLESS_MAX_AGE', '86400')
         ]
     ]
 
