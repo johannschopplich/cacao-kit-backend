@@ -1,14 +1,33 @@
+<div align="center">
+
 [![Cacao Kit Backend](./.github/og-image.png)](https://cacao-kit.byjohann.dev)
 
 # Cacao Kit (Backend)
 
-This headless starter kit is based on the [Kirby Headless Starter](https://github.com/johannschopplich/kirby-headless-starter) and provides a ready-to-use headless Kirby setup for the [Cacao Kit frontend](https://github.com/johannschopplich/cacao-kit-frontend). Demo content is included to showcase the starter's features.
+A headless Kirby CMS starter where **everything is a block**.
 
-With this Kirby project setup, every page-related component is a block. By default, the frontend fetches the same **page query** for every page and renders the blocks or layouts accordingly. This way, the backend defines the content structure while the routing doesn't have to be re-implemented in the frontend.
+[Setup](#setup) •
+[Usage](#usage) •
+[Cookbook](#cookbook)
 
-Of course, you can also use custom Kirby fields in your blueprint and create Nuxt pages in the frontend with custom queries. See the about page for an example.
+</div>
 
-If the block-first architecture doesn't fit your needs, you can still build upon this starter and use Kirby's built-in blocks. See the [cookbook](#cookbook) for more information.
+## When to Use
+
+| If you want to…                                  | This starter provides…                          |
+| ------------------------------------------------- | ------------------------------------------------ |
+| Build a headless Kirby + Nuxt site                | Pre-configured [Kirby Headless](https://kirby.tools/docs/headless) setup |
+| Use Kirby's page structure as the source of truth | Block-first architecture with layouts            |
+| Avoid duplicating routes in your frontend         | Single page query that works for all pages       |
+| Still use custom blueprints when needed           | Flexibility to create custom Nuxt pages with KQL |
+
+## Architecture
+
+This starter is based on the [Kirby Headless Starter](https://github.com/johannschopplich/kirby-headless-starter) and pairs with the [Cacao Kit frontend](https://github.com/johannschopplich/cacao-kit-frontend).
+
+**Block-first approach:** Every page-related component is a block. The frontend fetches the same page query for every page and renders blocks or layouts accordingly. The backend defines the content structure, so routing doesn't need to be re-implemented in the frontend.
+
+You can also use custom Kirby fields in your blueprints and create dedicated Nuxt pages with custom KQL queries. See the about page for an example.
 
 ![Screenshot of the Cacao Kit blocks setup](./storage/content/home/cacao-kit-blocks-screenshot.png)
 
@@ -43,7 +62,7 @@ Also, to enable the preview button in the frontend, set the environment variable
 ## Usage
 
 > [!TIP]
-> [📖 Read the Cacao Kit frontend documentation](https://github.com/johannschopplich/cacao-kit-frontend) or [📖 read the Kirby Headless Starter documentation](https://github.com/johannschopplich/kirby-headless-starter), from which this starter is based on.
+> [📖 Read the Cacao Kit frontend documentation](https://github.com/johannschopplich/cacao-kit-frontend) or [📖 read the Kirby Headless Starter documentation](https://github.com/johannschopplich/kirby-headless-starter), on which this starter is based.
 
 ### Blocks
 
@@ -53,16 +72,14 @@ If you don't want to nest blocks, you can add Kirby's built-in block `fieldsets`
 
 ## Cookbook
 
-### How to Add a New Block
+### Adding a New Block
 
-If you prefer to use a block-first approach, you can add new blocks to your Kirby project by following these steps:
-
-- Create a new blueprint in the [`site/blueprints/blocks`](./site/blueprints/blocks/) directory.
-- Add the new block to the [`blocks` field](./site/blueprints/fields/blocks.yml) blueprint.
-- Finally, follow the block guide [in the Cacao Kit frontend](https://github.com/johannschopplich/cacao-kit-frontends#how-to-add-a-new-block).
+1. Create a new blueprint in [`site/blueprints/blocks`](./site/blueprints/blocks/)
+2. Add the block to the [`blocks` field](./site/blueprints/fields/blocks.yml) blueprint
+3. Follow the [frontend block guide](https://github.com/johannschopplich/cacao-kit-frontend#adding-new-blocks) to create the matching component
 
 > [!NOTE]
-> If the new block contains a `files` field, make sure to follow the [`toResolvedBlocks()` field method guide](https://kirby.tools/docs/headless/field-methods#toresolvedblocks) if you want to resolve image UUIDs to file objects on the server.
+> If the block contains a `files` field and you want to resolve image UUIDs to file objects, see the [`toResolvedBlocks()` field method guide](https://kirby.tools/docs/headless/usage/field-methods#toresolvedblocks).
 
 ### Deployment
 
