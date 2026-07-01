@@ -59,13 +59,20 @@ return [
         }
     ],
 
+    'cors' => [
+        'allowOrigin' => env('KIRBY_CORS_ALLOW_ORIGIN', '*'),
+        'allowHeaders' => true,
+        'maxAge' => 86400
+    ],
+
     // See: https://kirby.tools/docs/headless/configuration/authentication
     'headless' => [
         'token' => env('KIRBY_HEADLESS_API_TOKEN'),
 
         'panel' => [
             // Preview URL for the Panel preview button
-            'frontendUrl' => env('KIRBY_HEADLESS_FRONTEND_URL')
+            'frontendUrl' => env('KIRBY_HEADLESS_FRONTEND_URL'),
+            'redirect' => true
         ]
     ]
 
