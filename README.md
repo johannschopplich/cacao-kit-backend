@@ -6,7 +6,7 @@
 
 A headless Kirby CMS starter where **everything is a block**.
 
-[Setup](#setup) •
+[Development](#development) •
 [Usage](#usage) •
 [Cookbook](#cookbook)
 
@@ -14,12 +14,12 @@ A headless Kirby CMS starter where **everything is a block**.
 
 ## When to Use
 
-| If you want to…                                  | This starter provides…                          |
-| ------------------------------------------------- | ------------------------------------------------ |
+| If you want to…                                   | This starter provides…                                                   |
+| ------------------------------------------------- | ------------------------------------------------------------------------ |
 | Build a headless Kirby + Nuxt site                | Pre-configured [Kirby Headless](https://kirby.tools/docs/headless) setup |
-| Use Kirby's page structure as the source of truth | Block-first architecture with layouts            |
-| Avoid duplicating routes in your frontend         | Single page query that works for all pages       |
-| Still use custom blueprints when needed           | Flexibility to create custom Nuxt pages with KQL |
+| Use Kirby's page structure as the source of truth | Block-first architecture with layouts                                    |
+| Avoid duplicating routes in your frontend         | Single page query that works for all pages                               |
+| Still use custom blueprints when needed           | Flexibility to create custom Nuxt pages with KQL                         |
 
 ## Architecture
 
@@ -31,33 +31,31 @@ You can also use custom Kirby fields in your blueprints and create dedicated Nux
 
 ![Screenshot of the Cacao Kit blocks setup](./storage/content/home/cacao-kit-blocks-screenshot.png)
 
-## Prerequisites
+## Development
 
-- PHP 8.2+
+1. Create your `.env` from the example:
 
-Kirby is not free software. However, you can try Kirby and the Starterkit on your local machine or on a test server as long as you need to make sure it is the right tool for your next project. … and when you’re convinced, [buy your license](https://getkirby.com/buy).
+   ```bash
+   cp .env.development.example .env
+   ```
 
-## Setup
+2. Install dependencies:
 
-### Composer
+   ```bash
+   composer install
+   ```
 
-Kirby-related dependencies are managed via [Composer](https://getcomposer.org) and located in the `vendor` directory. To install them, run:
+3. Run the PHP server – or use a dev server of your choice (e.g. Laravel Valet):
 
-```bash
-composer install
-```
+   ```bash
+   composer start
+   ```
 
-### Environment Variables
+Secure your API with a token by setting `KIRBY_HEADLESS_API_TOKEN` to a string of your choice. Set `KIRBY_HEADLESS_FRONTEND_URL` to your frontend deployment to enable the Panel preview button, and lock `KIRBY_CORS_ALLOW_ORIGIN` to the requesting origin instead of the wildcard for production.
 
-Duplicate the [`.env.development.example`](.env.development.example) as `.env`:
+Linting and formatting run through pnpm: `pnpm install`, then `pnpm run lint` or `pnpm run format`.
 
-```bash
-cp .env.development.example .env
-```
-
-It's recommended to secure your API with a token. To do so, set the environment variable `KIRBY_HEADLESS_API_TOKEN` to a token string of your choice.
-
-Also, to enable the preview button in the frontend, set the environment variable `KIRBY_HEADLESS_FRONTEND_URL` to the URL of your frontend deployment:
+Kirby is not free software – you can try it as long as you need to, but [buy a license](https://getkirby.com/buy) once you take a project to production.
 
 ## Usage
 
@@ -83,9 +81,9 @@ If you don't want to nest blocks, you can add Kirby's built-in block `fieldsets`
 
 ### Deployment
 
+Deployment runs through [`scripts/ploi-deploy.sh`](./scripts/ploi-deploy.sh) on [ploi.io](https://ploi.io) – adapt it to your hosting environment as needed.
+
 > [!NOTE]
-> See [ploi-deploy.sh](./scripts/ploi-deploy.sh) for exemplary deployment instructions.
->
 > Some hosting environments require uncommenting `RewriteBase /` in [`.htaccess`](./public/.htaccess) to make site links work.
 
 ## License
