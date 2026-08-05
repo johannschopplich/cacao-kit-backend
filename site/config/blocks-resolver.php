@@ -7,13 +7,13 @@ use Kirby\Content\Field;
 return [
     // Custom resolves for `block:field`
     'resolvers' => [
-        // Resolve permalinks (containing UUIDs) to URLs inside the
-        // field `text` of the `text` block
+        // Resolves permalinks (containing UUIDs) to URLs inside the
+        // field `text` of the `text` block.
         'text:text' => function (Field $field, Block $block) {
             return $field->permalinksToUrls()->value();
         },
-        // Resolve the team structure server-side to handle image transformations
-        // and deep page links
+        // Resolves the team structure server-side to handle image transformations
+        // and deep page links.
         'team-structure:team' => function (Field $field, Block $block) {
             $structure = $field->toStructure();
 
