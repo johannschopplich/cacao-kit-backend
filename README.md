@@ -81,7 +81,7 @@ If you don't want to nest blocks, you can add Kirby's built-in block `fieldsets`
 
 ### Deployment
 
-Deployment runs through [`scripts/ploi-deploy.sh`](./scripts/ploi-deploy.sh) on [ploi.io](https://ploi.io) – adapt it to your hosting environment as needed.
+Pushes to `main` deploy through [`.github/workflows/deploy.yml`](./.github/workflows/deploy.yml). A copy without the `DEPLOY_HOST` repository variable skips it – adapt it to your hosting environment as needed.
 
 > [!NOTE]
 > Some hosting environments require uncommenting `RewriteBase /` in [`.htaccess`](./public/.htaccess) to make site links work.
