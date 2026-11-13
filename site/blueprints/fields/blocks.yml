@@ -20,8 +20,6 @@ fieldsets:
     type: group
     fieldsets:
       - image
-      - gallery
-      - video
   # code:
   #   label: Code
   #   type: group
