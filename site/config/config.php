@@ -52,10 +52,13 @@ return [
 
     // See: https://kirby.tools/docs/headless/usage/field-methods#resolvepermalinks
     'permalinksResolver' => [
-        // Strips the origin from URLs.
+        // Strips the origin from page URLs; files stay absolute, since the frontend serves no `/media`.
         'urlParser' => function (string $url, App $kirby) {
-            $path = parse_url($url, PHP_URL_PATH);
-            return $path;
+            if (str_starts_with($url, $kirby->url('media'))) {
+                return $url;
+            }
+
+            return parse_url($url, PHP_URL_PATH) ?? '/';
         }
     ],
 
