@@ -124,7 +124,7 @@ Pushes to `main` deploy through [`.github/workflows/deploy.yml`](./.github/workf
 2. Set the repository secret `DEPLOY_SSH_KEY` to that key's private half
 3. Set the repository variable `DEPLOY_HOST` to the server's host name
 4. Set the repository variable `DEPLOY_KNOWN_HOSTS` to the output of `ssh-keyscan <host>`
-5. Replace the SSH user `johann` in the workflow with your own
+5. Set the repository variable `DEPLOY_USER` to the SSH user on the server
 
 > [!NOTE]
 > Some hosting environments require uncommenting `RewriteBase /` in [`.htaccess`](./public/.htaccess) to make site links work.
