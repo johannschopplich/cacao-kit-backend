@@ -74,8 +74,7 @@ return [
 
         'panel' => [
             // Preview URL for the Panel preview button.
-            'frontendUrl' => env('KIRBY_HEADLESS_FRONTEND_URL'),
-            'redirect' => true
+            'frontendUrl' => env('KIRBY_HEADLESS_FRONTEND_URL')
         ]
     ]
 
