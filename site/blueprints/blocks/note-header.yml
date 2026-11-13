@@ -12,9 +12,4 @@ fields:
     type: date
     time: true
     default: now
-  author:
-    label:
-      en: Author
-      de: Autor
-    type: users
   tags: true
