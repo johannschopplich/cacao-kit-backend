@@ -39,8 +39,6 @@ Two field blueprints define the blocks that are available: the [`blocks` field](
 
 [`site/config/blocks-resolver.php`](./site/config/blocks-resolver.php) shapes a block's JSON when a query calls [`toResolvedBlocks()`](https://kirby.tools/docs/headless/usage/field-methods#toresolvedblocks) or `toResolvedLayouts()`, as the frontend's page query does. A resolver under `<block>:<field>` replaces that field's value, such as `text:text`, which turns permalinks into URLs – see [Custom Resolvers](https://kirby.tools/docs/headless/usage/field-methods#custom-resolvers) for the syntax.
 
-You can also use custom Kirby fields in your blueprints and create dedicated Nuxt pages with custom KQL queries. See the [about page](./site/blueprints/pages/about.yml) for an example.
-
 ![Screenshot of the Cacao Kit blocks setup](./storage/content/home/cacao-kit-blocks-screenshot.png)
 
 ## Development
@@ -106,7 +104,7 @@ Kirby is not free software – you can try it as long as you need to, but [buy a
      preview: "{{ page.frontendUrl }}"
    ```
 
-3. For custom fields, create a dedicated Nuxt page with its own query, as in [Add a KQL Query](https://github.com/johannschopplich/cacao-kit-frontend#add-a-kql-query)
+3. For custom fields, like those of the [about page](./site/blueprints/pages/about.yml), create a dedicated Nuxt page with its own query, as in [Add a KQL Query](https://github.com/johannschopplich/cacao-kit-frontend#add-a-kql-query)
 
 ### Commit a Plugin of Your Own
 
